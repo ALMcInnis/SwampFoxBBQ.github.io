@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Swamp Fox BBQ - Catering</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link href = "../css/style.css" rel = "stylesheet"/>
+<link href = "../css/jquery-ui.css" rel = "stylesheet"/>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<link rel="shortcut icon" href="../pig.png"/>
+</head>
+
+<body>
+<header role="banner">
+	<nav role="navigation" class="navbar" id="toggle-nav">
+	<ul class="clearfix">
+		<div class = "float-left">
+			<a class= "homepage" href ="../index.html"><p>SWAMP FOX BBQ</p></a>
+		</div>
+		<div class = "float-right">
+			<li><a href ="menu.html">MENU</a></li><li><a href ="events.html">EVENTS</a></li><li><a href ="contact-form.html">CATERING</a></li>
+		</div>
+		<button class="icon" onclick="toggleNavbar()">
+				<i class="fa fa-bars"></i>
+	    </button>
+	</ul> 
+	</nav>
+	<div class = "title catering">
+		<p>CATERING SERVICES</P>
+	</div>
+</header>
+<script src = "../js/navbar.js"></script>
+
+<main class = "menu-bg catering-height clearfix">
+	<h2 id = "request">YOU TELL US HOW MANY YOU'RE HOSTING AND WE'LL HANDLE THE REST.</h2>
+	<div class ="offer_wrapper">
+		<p>WE OFFER OUR SLOW-SMOKED MEATS AND SCRATCH-MADE SIDES WITH TWO OPTIONS: DELIVERY ONLY OR SET UP & SERVE. WE’LL HELP YOU CREATE CUSTOM MENUS THAT FIT YOUR BUDGET, STYLE AND SPECIFIC DIETARY NEEDS. CALL US AND OUR CATERING CONSULTANTS WILL HELP YOU CRAFT THE PERFECT EXPERIENCE YOU DESIRE.</p>
+
+		<p>WE REQUIRE A MINIMUM 48-HOUR NOTICE. DELIVERY CHARGES APPLY. THIS FORM IS FOR DELIVERY OF CATERING ONLY. PLEASE ALLOW AT LEAST 2 BUSINESS DAYS TO HEAR BACK FROM US. OUR CATERING OFFICES ARE OPEN MONDAY THRU FRIDAY, 8:30AM-5:30PM. WE CAN ONLY CATER WITHIN THE PEE DEE REGION.</p>
+	</div>
+	
+	<article class = "catering-form">
+		<div class ="row-wrapper">
+			<div class = "input-item float-left">
+				<label for = "fname" class = "required ">First Name</label>
+				<input type="text" class="text_input" name="fname">
+			</div>
+		
+			<div class = "input-item float-right">
+				<label for = "lname" class = "required ">Last Name</label>
+				<input type="text" class="text_input" name="lname">
+			</div>
+		</div>
+		
+		<div class ="row-wrapper">
+		<div class = "input-item float-left">
+			<label for = "email" class = "required ">E-Mail Address</label>
+			<input type="email" class="text_input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"  title="Enter a valid email address.">
+		</div>
+		<div class = "input-item float-right">
+			<label for = "phone" class = "required ">Phone Number</label>
+			<input type="tel" class="text_input" name="phone">
+		</div>
+		</div>
+		
+		<div class ="row-wrapper">
+		<div class = "input-item float-left">
+			<label for = "date" class = "required ">Date Of Event</label>
+			<input type="text" id="pick_date" class="text_input date" name="date" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" title="Enter a valid date.">
+		</div>
+		<div class = "input-item float-right">
+			<label for = "count" class = "required ">Headcount</label>
+			<input type="number" class="text_input" name="count">
+		</div>
+		</div>
+		
+		<div class ="row-wrapper">
+		<div class = "input-item float-left">
+			<label for = "location" class = "required ">Location Of Event</label>
+			<input type="text" class="text_input" name="location" >
+		</div>
+		<div class = "input-item float-right">
+			<label for = "address" class = "required ">Address</label>
+			<input type="text" class="text_input" name="address">
+		</div>
+		</div>
+		
+		<div class ="row-wrapper">
+		<div class = "input-item">
+			<label for = "details" class = "required ">Event Details & Requested Menu Items</label>
+			<textarea class="text_input" name="details" rows="8" cols="60"></textarea>
+			<button class ="btn" type = "button">SEND YOUR REQUEST</button>
+		</div>
+		</div>
+	</article>
+</main>
+<script src = "../js/title.js"></script>
+<script>
+	$(document).ready(function(){
+		$(function(){
+			$("#pick_date").datepicker();
+		});
+	})
+</script>
+<footer>
+	<div class="footer-items">
+		<div class = "address">
+			<p>Swamp Fox BBQ</p>
+			<p>4784 Highway 301 South</p> 
+			<p>Florence, South Carolina 29506</p>
+			<p>Look for the giant American Flag in front!</p>
+			<br />
+		</div>
+		<div class = "ww">
+			<p>Swamp Fox BBQ is raising funds for the <b style="font-family:stencil,stencil std bold,sans-serif;">Wounded Warrior Project	</b>.</p> 
+			<p> Donate to the Wounded Warrior fund, click on the link below:</p>
+			<br />
+			<a href="http://www.woundedwarriorproject.org"><img src="../img/wwp.jpg" alt="Wounded Warrior Project logo" width="50" height="50"></a><!--Wounded Warrior project logo-->
+		</div>	
+	</div>
+</footer>
+
+</body>
+
+</html>
