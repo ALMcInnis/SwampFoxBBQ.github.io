@@ -5,6 +5,9 @@
 *::before,*::after{
 	border-sizing:border-box;
 }
+*{
+ font-weight:normal;	
+}
 .clearfix::after {
   content: "";
   clear: both;
